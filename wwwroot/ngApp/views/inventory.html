@@ -1,3 +1,33 @@
 <h2>Inventory View</h2>
 
 <p>{{ controller.message }}</p>
+
+<div>
+    <input ng-model="input" type="text" name="search" placeholder="Search...">
+</div>
+<div>
+    <label for="taxField">$</label>
+    <input name="taxField" ng-model="controller.price" type="number">
+    <button ng-click="controller.calculateTax()">Calculate Tax</button>
+</div>
+<br>
+
+<table class="table">
+    <tr>
+        <th>Year</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Price</th>
+    </tr>
+    <tr ng-repeat="car in controller.cars | filter : input">
+        <td>{{ car.year }}</td>
+        <td>{{ car.make }}</td>
+        <td>{{ car.model }}</td>
+        <td>${{ car.price }}</td>
+    </tr>
+    <tr>
+        <td>No</td>
+        <td>matching</td>
+        <td>results</td>
+    </tr>
+</table>
