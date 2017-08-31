@@ -13,6 +13,25 @@
     <div class="container">
 
         <h1>Project09 App</h1>
+        <nav="topnav">
+        
+        <ul>
+            <li>
+                <a ui-sref="home">Home</a>
+            </li>
+            <li>
+                <a ui-sref="about">About</a>
+            </li>
+            <li>
+                <a ui-sref="inventory">Inventory</a>
+            </li>
+            <li>
+                <a ui-sref="contact">Contact</a>
+            </li>
+
+            
+        </ul>
+        </navbar>
 
         <ui-view></ui-view>
 
@@ -28,6 +47,9 @@
 
     <!-- controllers -->
     <script src="/ngApp/controllers/mainController.js"></script>
+    <script src="/ngApp/controllers/aboutController.js"></script>
+    <script src="/ngApp/controllers/inventoryController.js"></script>
+    <script src="/ngApp/controllers/contactController.js"></script>
     
     <!-- services -->
     <script src="/ngApp/services/productService.js"></script>
