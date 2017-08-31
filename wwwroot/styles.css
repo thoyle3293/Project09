@@ -1,4 +1,5 @@
 
+
 .container {
     background-color: #d6eaf8;
     color: black;
@@ -49,4 +50,30 @@ h2 {
 
 body {
     background-color: #d6eaf8;
+}
+.contact{
+    align-content: vertical;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px auto;
+    position: fixed
+}
+.fa:hover {
+    opacity: 0.5;
+}
+#go:hover{
+    background-color: blue;
+}
+.about{
+        background-color: #FFF;
+        position:fixed;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+
 }
